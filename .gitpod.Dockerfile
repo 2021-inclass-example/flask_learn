@@ -8,8 +8,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y zsh git 
 
 USER gitpod
 
-RUN pip3 install pytest==4.4.2 mock pytest-testdox toml
-RUN npm i learnpack@0.0.76 -g && learnpack plugins:install learnpack-python
+# RUN pip3 install pytest==4.4.2 mock pytest-testdox toml
+# RUN npm i learnpack@0.0.76 -g && learnpack plugins:install learnpack-python
 
 # set the zsh theme
 ENV ZSH_THEME cloud
